@@ -34,19 +34,22 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/color2.css" media="screen" id="color">
-    <script src="assets/js/CustomJs.js"></script>
+  
 
     <script >
+        $(document).on('click','.js-btn-view',function () {
+            redirectToProduct()
+        } )
         function showOnModel(cotrol) {
     $('#img-view').attr('src','assets/mainpicImages/'+cotrol.data('photo'));
     $('#js-itemName').html(cotrol.data('name'));
     $('#js-desc').html(cotrol.data('desc'));
+    $('#js-price').html(cotrol.data('price'));
 }
 
 $(document).on('click','.js-viewItem',function (){
 var cotrol=$(this);
 
-console.log(cotrol.data('photo'))
 showOnModel(cotrol);
 })
     </script>
@@ -428,7 +431,9 @@ showOnModel(cotrol);
                                                                         <i class="ti-heart" aria-hidden="true"></i>
                                                                     </a>
                                                                     <a href="#" data-toggle="modal" class="js-viewItem"
-                                                                        data-target="#quick-view" data-name="Alabaster Candels" data-desc="Alabaster Candels in metal contaiers" data-photo="1.jpg"
+                                                                        data-target="#quick-view" data-name="Alabaster Candels" data-desc="Alabaster Candels in metal contaiers" 
+                                                                        data-photo="1.jpg"
+                                                                        data-price="EGP 500."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -491,6 +496,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal" class="js-viewItem"
                                                                         data-target="#quick-view" data-photo="2.jpg"
+                                                                        data-price="EGP 320."
                                                                         title="Quick View" data-name="Bamboo Shapes" data-desc="wooden Bamboo shapes for decoration purpose" >
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -554,6 +560,7 @@ showOnModel(cotrol);
                                                                     <a href="#" data-toggle="modal" class="js-viewItem"
                                                                         data-target="#quick-view" data-name="Copper Metal Candel Holder"
                                                                         data-desc="a Copper Holder for Wax Candels heat resistance" data-photo="3.jpg"
+                                                                        data-price="EGP 150."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -615,6 +622,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" data-name="Crochet cushion" data-desc=">Crochet cushion from egyptian cotton" class="js-viewItem" data-photo="4.jpg"
+                                                                        data-price="EGP 100."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -675,7 +683,10 @@ showOnModel(cotrol);
                                                                         <i class="ti-heart" aria-hidden="true"></i>
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
-                                                                        data-target="#quick-view" data-name="Silk Curtains" data-desc="Silk Curtains" class="js-viewItem" title="Quick View">
+                                                                        data-target="#quick-view" data-name="Silk Curtains" data-desc="Silk Curtains"
+                                                                        data-photo="5.jpg"
+                                                                        data-price="EGP 1200.00"
+                                                                        class="js-viewItem" title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
 
@@ -735,7 +746,8 @@ showOnModel(cotrol);
                                                                         <i class="ti-heart" aria-hidden="true"></i>
                                                                     </a>
                                                                     <a href="#" data-toggle="modal" data-name="Leather Rugs" data-desc="natural Leather Rugs with variant shaeps" class="js-viewItem" 
-                                                                        data-target="#quick-view" data-photo="5.jpg"
+                                                                        data-target="#quick-view" data-photo="6.jpg"
+                                                                        data-price="EGP 800."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -798,6 +810,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" data-desc="Natural Leather Bags Diffrent Color" data-name="Natural Leather Bags" class="ja-viewItem" data-photo="7.jpg"
+                                                                        data-price="EGP 750."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -859,6 +872,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" data-desc="Large Marmar Vase" data-name="Large Marmar Vase" class="js-viewItem" data-photo="8.jpg"
+                                                                        data-price="EGP 800."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -920,6 +934,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" class="js-viewItem" data-desc="a pottery Teacup " data-name="a pottery Teacup " data-photo="9.jpg"
+                                                                        data-price="EGP 120."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -981,6 +996,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" data-photo="10.jpg"
+                                                                        data-price="EGP 170."
                                                                         title="Quick View" data-name="a pottery Teacup" data-desc="a pottery Teacup" class="js-viewItem">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -1042,6 +1058,7 @@ showOnModel(cotrol);
                                                                     </a>
                                                                     <a href="#" data-toggle="modal"
                                                                         data-target="#quick-view" data-name="Salt Stones Candles" data-desc="Salt Stones Candles" class="js-viewItem" data-photo="11.jpg"
+                                                                        data-price="EGP 75."
                                                                         title="Quick View">
                                                                         <i class="ti-search" aria-hidden="true"></i>
                                                                     </a>
@@ -1295,7 +1312,7 @@ showOnModel(cotrol);
                         <div class="col-lg-6 rtl-text">
                             <div class="product-right">
                                 <h2 id="js-itemName">Albaster</h2>
-                                <h3>EGP 320.00</h3>
+                                <h3 id="js-price">EGP 320.00</h3>
                                 <!-- <ul class="color-variant">
                                     <li class="bg-light0"></li>
                                     <li class="bg-light1"></li>
@@ -1328,7 +1345,7 @@ showOnModel(cotrol);
                                     </div>
                                 </div>
                                 <div class="product-buttons"><a href="#" class="btn btn-normal">add to cart</a> <a
-                                        href="#" class="btn btn-normal">view detail</a></div>
+                                        href="#" class="btn btn-normal js-btn-view">view detail</a></div>
                             </div>
                         </div>
                     </div>
@@ -1562,7 +1579,7 @@ showOnModel(cotrol);
 
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>
-
+    <script src="assets/js/CustomJs.js"></script>
 </body>
 
 </html>
