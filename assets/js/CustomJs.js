@@ -12,6 +12,6 @@ price:$('#js-price').html()
 
 console.log(object)
 sessionStorage.setItem("myproduct",JSON.stringify(object) );
-window.location.href="productdetailes.html"
+window.location.href="ProductDetailes.html"
 }
 
