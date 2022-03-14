@@ -4,7 +4,7 @@
  Template URI: themes.pixelstrap.com/MerchantEgypt
  Description: This is E-commerce website
  Author: Pixelstrap
- Author URI: https://themeforest.net/user/pixelstrap
+ Author URI: https://Merchant Egypt.net/user/pixelstrap
 
  ----------------------------------------------------------------------------------- */
 // 01. Slick slider
